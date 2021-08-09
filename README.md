@@ -8,4 +8,23 @@ Points can be used for new order payment, every 1 point equivalent to USD $0.01.
 The function should be called everytime a sales is made or modified.
 It goes through the records and adds the rewards to the user.
 
-The database can be connected through db.php file. 
+The database can be connected through db.php file.
+
+The answer to the second question is as follows:
+
+"Select  COUNT(orders.order_ID) AS Number_Of_Order,
+
+sum(CASE WHEN orders.sales_type = "Normal" then orders_products.Normal_Price ELSE orders_products.Promotion_Price 
+
+END) AS Total_Sales_Amount
+
+FROM orders INNER JOIN orders_products on orders.order_ID = orders_products.Order_ID"
+
+The sql for the second question is order.sql
+
+The answer to the third question is
+
+For the third question
+6% GST for division is 1.06
+So
+5/1.06 = 4.71698
