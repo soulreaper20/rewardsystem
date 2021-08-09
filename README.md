@@ -10,6 +10,10 @@ It goes through the records and adds the rewards to the user.
 
 The database can be connected through db.php file.
 
+You can also find the diagram as image file. 
+
+The sql file for the reward system is also uploaded as reward.sql.
+
 The answer to the second question is as follows:
 
 "Select  COUNT(orders.order_ID) AS Number_Of_Order,
