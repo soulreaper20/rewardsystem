@@ -7,3 +7,5 @@ Points can be used for new order payment, every 1 point equivalent to USD $0.01.
 
 The function should be called everytime a sales is made or modified.
 It goes through the records and adds the rewards to the user.
+
+The database can be connected through db.php file. 
